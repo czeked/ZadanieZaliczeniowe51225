@@ -19,10 +19,12 @@
         android:layout_marginBottom="10dp"/>
 
     <EditText
+        android:id="@+id/etImie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Imię"/>
     <EditText
+        android:id="@+id/etNazwisko"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Nazwisko"/>
@@ -42,6 +44,7 @@
             android:textStyle="bold"/>
 
         <Spinner
+            android:id="@+id/spinner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -58,6 +61,7 @@
         android:textStyle="bold"/>
 
     <EditText
+        android:id="@+id/etIleZnakow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Ile znaków?"
@@ -69,17 +73,20 @@
         android:orientation="vertical">
 
         <CheckBox
+            android:id="@+id/cbLitery"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Małe i wielkie litery"
             android:checked="true"/>
 
         <CheckBox
+            android:id="@+id/cbCyfry"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cyfry" />
 
         <CheckBox
+            android:id="@+id/cbZnaki"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Znaki specjalne" />
@@ -89,6 +96,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/btnGeneruj"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Generuj hasło"
@@ -97,6 +105,7 @@
         android:backgroundTint="#5EA7FF"/>
 
     <Button
+        android:id="@+id/btnZatwierdz"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Zatwierdź"
